@@ -1,29 +1,60 @@
 import chalk from "chalk";
 import logSymbols from "log-symbols";
 
+const green = chalk.green;
+const red = chalk.red;
+const blue = chalk.blue;
+const yellow = chalk.yellow;
+const info = logSymbols.info;
+const success = logSymbols.success;
+const warning = logSymbols.warning;
+const error = logSymbols.error;
+const log = console.log;
+
 const alert = options => {
   const defaultOptions = {
-    type: `error`,
-    msg: `Missing some options`
+    type: ` error `,
+    message: `DEFAULT MESSAGE`,
+    description: ``
   };
   const opts = { ...defaultOptions, ...options };
-  const { type, msg } = opts;
+  const { type, message, description } = opts;
+  const printDescription = description
+    ? ` ${description} `
+    : type.toUpperCase();
+  const handleMessage = message ? message : defaultOptions.message;
 
   switch (type) {
     case `success`:
-      console.log(`${logSymbols.success} ${chalk.green(msg)}`);
+      log(
+        `\n${success} ${green.inverse(`${printDescription}`)} ${green(
+          handleMessage
+        )}\n`
+      );
       break;
     case `info`:
-      console.log(`${logSymbols.info} ${chalk.blue(msg)}`);
+      log(
+        `\n${info} ${blue.inverse(`${printDescription}`)} ${blue(
+          handleMessage
+        )}\n`
+      );
       break;
     case `warning`:
-      console.log(`${logSymbols.warning} ${chalk.yellow(msg)}`);
+      log(
+        `\n${warning} ${yellow.inverse(`${printDescription}`)} ${yellow(
+          handleMessage
+        )}\n`
+      );
       break;
     case `error`:
-      console.log(`${logSymbols.error} ${chalk.red(msg)}`);
+      log(
+        `\n${error} ${red.inverse(`${printDescription}`)} ${red(
+          handleMessage
+        )}\n`
+      );
       break;
     default:
-      console.log("no options");
+      log("no options");
   }
 };
 

@@ -2,19 +2,23 @@ import alert from "./index.js";
 
 alert({
   type: `success`,
-  msg: `All good!`
+  message: ` All is good! `,
+  description: `SUCCESS`
 });
 alert({
   type: `info`,
-  msg: `Some useful info`
+  message: ` Some useful info `,
+  description: `INFO`
 });
 alert({
   type: `warning`,
-  msg: `Careful!`
+  message: ` Careful! `,
+  description: `WARNING`
 });
 alert({
   type: `error`,
-  msg: `Something is wrong!`
+  message: ` Something is wrong! `,
+  description: `ERROR`
 });
 
 alert();
