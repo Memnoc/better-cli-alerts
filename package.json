@@ -1,5 +1,5 @@
 {
-  "name": "cli-alerts",
+  "name": "better-cli-alerts",
   "version": "1.0.0",
   "description": "CLI alerts with colors and symbols: success, info, warning, error. Cross platform comaptible: Windows, MacOS,",
   "main": "index.js",
