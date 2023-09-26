@@ -3,13 +3,13 @@
 ### scripts included in the template:
 
 ```sh
-npm run format`
+npm run format
 ```
 
 Format any .js and .json file.
 
 ```sh
-node run test.js`
+node run test.js
 ```
 
 Mocks the execution of the CLI for testing purposes.
