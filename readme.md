@@ -15,6 +15,8 @@ npm install better-cli-alerts
 
 ```js
 const alert = require("better-cli-alerts");
+// or if you use modueles
+import alert from "better-cli-alerts";
 
 // Success message
 alert({
