@@ -5,6 +5,13 @@ Work on macOS, Linux, and Windows.
 
 # [better-cli-alerts](https://www.npmjs.com/package/better-cli-alerts)
 
+<h4 align="center">
+    <a href="https://github.com/memnoc/better-cli-alerts">
+<a href="https://www.npmjs.com/package/better-cli-alerts"><img src="https://i.imgur.com/CTlCkOI.png" title="better-cli-alerts" /></a>
+    </a>
+    <br>
+</h4>
+
 ## Install
 
 ```sh
