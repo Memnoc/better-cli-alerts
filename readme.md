@@ -1,4 +1,4 @@
-Cross platform CLI Alerts with colors with Cattpuccin colors and custom messages.
+Cross platform CLI Alerts with colors with [Catpuccin](https://github.com/catppuccin/palette) colors and custom messages.
 Work on macOS, Linux, and Windows.
 
 </h4>
@@ -95,12 +95,14 @@ Default: `''` (Empty string)
 ## Connect
 
 <div align="left">
-    <p><a href="https://github.com/Memnoc"><img alt="GitHub @Memnoc" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> Follow me on Github</small></p>
-    <p><a href="https://matechblog.com/"><img alt="Blog: matechblog.com" align="center" src="https://img.shields.io/badge/MY%20BLOG-gray.svg?colorB=4D2AFF&style=flat" /></a>&nbsp;<small><strong>(read)</strong> Sometimes I write about tech, tutorials and passions. </small></p>
+    <p><a href="https://github.com/Memnoc"><img alt="GitHub @Memnoc" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=f2d5cf&style=flat&logo=11111b" /></a>&nbsp;<small><strong>(follow)</strong> Follow me on Github</small></p>
+    <p><a href="https://matechblog.com/"><img alt="Blog: matechblog.com" align="center" src="https://img.shields.io/badge/MY%20BLOG-gray.svg?colorB=f5a97f&style=flat&logo=11111b" /></a>&nbsp;<small><strong>(read)</strong> Sometimes I write about tech, tutorials and passions. </small></p>
 </div>
 
 <br>
 
-## Aknowledgment
+## Credits
 
-<p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&style=flat" /></a>&nbsp;<small><strong>Ahmad Awais</strong> This package was developed as part of his Node CLI course</small></p>
+<p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Ahmad Awais</strong> This package was developed as part of Ahmad's Node CLI course that I strongly recommend <3 </small></p>
+
+<p><a href="https://github.com/catppuccin/palette"><img alt="Catpuccin palette" align="center" src="https://img.shields.io/badge/CATPUCCIN-white.svg?colorB=b7bdf8&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Catpuccin</strong> This package was developed as part of his Node CLI course</small></p>
