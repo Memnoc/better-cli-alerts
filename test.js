@@ -21,4 +21,10 @@ alert({
   description: `ERROR`
 });
 
+alert({
+  type: `error`,
+  message: ` Something is wrong! `,
+  description: `YOUR CUSTOM MESSAGE`
+});
+
 alert();

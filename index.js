@@ -15,7 +15,7 @@ const alert = options => {
   const defaultOptions = {
     type: ` error `,
     message: `DEFAULT MESSAGE`,
-    description: ``
+    description: `You forgot to define some options`
   };
   const opts = { ...defaultOptions, ...options };
   const { type, message, description } = opts;
@@ -54,7 +54,12 @@ const alert = options => {
       );
       break;
     default:
-      log("no options");
+      log(
+        `\n${error} ${red.inverse(`${printDescription}`)} ${red(
+          handleMessage
+        )}\n`
+      );
+      break;
   }
 };
 
