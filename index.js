@@ -1,6 +1,15 @@
-import chalk from "chalk";
-import logSymbols from "log-symbols";
+/**
+ * Better CLI Alerts.
+ *
+ * Cross platform CLI Alerts with colors.
+ * Works on macOS, Linux, and Windows.
+ * Alerts: `success`, `info`, `warning`, `error`.
+ *
+ * @author Matteo Stara <https://matechblog.com/>
+ */
 
+import logSymbols from "log-symbols";
+import chalk from "chalk";
 const green = chalk.green;
 const red = chalk.red;
 const blue = chalk.blue;
@@ -15,7 +24,7 @@ const alert = options => {
   const defaultOptions = {
     type: ` error `,
     message: `DEFAULT MESSAGE`,
-    description: `You forgot to define some options`
+    description: `Please define some options`
   };
   const opts = { ...defaultOptions, ...options };
   const { type, message, description } = opts;

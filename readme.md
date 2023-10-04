@@ -3,7 +3,7 @@ Work on macOS, Linux, and Windows.
 
 </h4>
 
-# better-cli-alerts
+# [better-cli-alerts](https://www.npmjs.com/package/better-cli-alerts)
 
 ## Install
 
@@ -14,7 +14,7 @@ npm install better-cli-alerts
 ## Usage
 
 ```js
-const alert = require("cli-alerts");
+const alert = require("better-cli-alerts");
 
 // Success message
 alert({

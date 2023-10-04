@@ -1,5 +1,7 @@
 import alert from "./index.js";
 
+console.clear();
+
 alert({
   type: `success`,
   message: ` All is good! `,
