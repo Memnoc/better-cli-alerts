@@ -22,7 +22,7 @@ npm install better-cli-alerts
 
 ```js
 const alert = require("better-cli-alerts");
-// or if you use modueles
+// or if you use modules
 import alert from "better-cli-alerts";
 
 // Success message
@@ -105,4 +105,4 @@ Default: `''` (Empty string)
 
 <p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Ahmad Awais</strong> This package was developed as part of Ahmad's Node CLI course that I strongly recommend <3 </small></p>
 
-<p><a href="https://github.com/catppuccin/palette"><img alt="Catpuccin palette" align="center" src="https://img.shields.io/badge/CATPUCCIN-white.svg?colorB=b7bdf8&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Catpuccin</strong> This package was developed as part of his Node CLI course</small></p>
+<p><a href="https://github.com/catppuccin/palette"><img alt="Catpuccin palette" align="center" src="https://img.shields.io/badge/CATPUCCIN-white.svg?colorB=b7bdf8&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Catpuccin</strong> Simply the best theme palette for anything 💜 </small></p>
