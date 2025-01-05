@@ -1,32 +1,32 @@
-import alert from "./index.js";
+import alert from "../src/index.js";
 
 console.clear();
 
 alert({
   type: `success`,
   message: ` All is good! `,
-  description: `SUCCESS`
+  description: `SUCCESS`,
 });
 alert({
   type: `info`,
   message: ` Some useful info `,
-  description: `INFO`
+  description: `INFO`,
 });
 alert({
   type: `warning`,
   message: ` Careful! `,
-  description: `WARNING`
+  description: `WARNING`,
 });
 alert({
   type: `error`,
   message: ` Something is wrong! `,
-  description: `ERROR`
+  description: `ERROR`,
 });
 
 alert({
   type: `error`,
   message: ` Something is wrong! `,
-  description: `YOUR CUSTOM MESSAGE`
+  description: `YOUR CUSTOM MESSAGE`,
 });
 
 alert();
