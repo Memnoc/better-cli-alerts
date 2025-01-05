@@ -5,22 +5,22 @@ console.clear();
 alert({
   type: `success`,
   message: ` All is good! `,
-  description: `SUCCESS`,
+  description: `YAY :)`,
 });
 alert({
   type: `info`,
   message: ` Some useful info `,
-  description: `INFO`,
+  description: `FYI...`,
 });
 alert({
   type: `warning`,
   message: ` Careful! `,
-  description: `WARNING`,
+  description: `CAREFUL :|`,
 });
 alert({
   type: `error`,
   message: ` Something is wrong! `,
-  description: `ERROR`,
+  description: `OOPS :(`,
 });
 
 alert({

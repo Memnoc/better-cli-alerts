@@ -3,23 +3,19 @@
  * Better CLI Alerts.
  *
  * Cross platform CLI Alerts with colors.
+ * Moved to TypeScript since version 2.0.0
  * Works on macOS, Linux, and Windows.
- * Alerts: `success`, `info`, `warning`, `error`.
+ * Alerts: `yay!`, `FYI`, `careful!`, `oops!`.
  *
  * @author Matteo Stara <https://matechblog.com/>
  */
 
 import { colors, symbols, log } from "./constants/index.js";
-
-interface AlertOptions {
-  type?: string;
-  message?: string;
-  description?: string;
-}
+import { AlertOptions } from "./types/index.js";
 
 const alert = (options?: AlertOptions) => {
   const defaultOptions = {
-    type: " error ",
+    type: "error",
     message: "DEFAULT MESSAGE",
     description: "Please define some options",
   };
@@ -79,4 +75,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   alert({ type: "success", message: "Test success message" });
   alert({ type: "info", message: "Test info message" });
   alert({ type: "warning", message: "Test warning message" });
+  alert({ type: "error", message: "Test error message" });
 }

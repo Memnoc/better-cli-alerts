@@ -29,28 +29,28 @@ import alert from "better-cli-alerts";
 alert({
   type: `success`,
   message: ` All is good! `,
-  description: `SUCCESS`,
+  description: `YAY :)!`,
 });
 
 // Info message
 alert({
   type: `info`,
   message: ` Some useful info `,
-  description: `INFO`,
+  description: `FYI...`,
 });
 
 // Warning message
 alert({
   type: `warning`,
   message: ` Careful! `,
-  description: `WARNING`,
+  description: `CAREFUL :/`,
 });
 
 // Error message
 alert({
   type: `error`,
   message: ` Something is wrong! `,
-  description: `ERROR`,
+  description: `OOPS! :(`,
 });
 
 // Using custom messages
@@ -101,7 +101,7 @@ Default: `''` (Empty string)
 
 ## Credits
 
-<p><a href="https://github.com/catppuccin/palette"><img alt="Chalk library" algn="center" src="https://github.com/chalk/chalk" /></a>&nbsp;<small><strong>Chalk</strong> For providing a zero dependency way to bring colors to the terminal 💜 </small></p>
+<p><a href="https://github.com/catppuccin/palette"><img alt="Chalk library" algn="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Chalk</strong> For providing a zero dependency way to bring colors to the terminal 💜 </small></p>
 
 <p><a href="https://github.com/sindresorhus/log-symbols"><img alt="Log Symbols" algn="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Log Symbols</strong> For providing beautifully simple icons to complement the error messages 💜 </small></p>
 
