@@ -7,7 +7,7 @@ Work on macOS, Linux, and Windows.
 
 <h4 align="center">
     <a href="https://github.com/memnoc/better-cli-alerts">
-<a href="https://www.npmjs.com/package/better-cli-alerts"><img src="https://imgur.com/a/uk3MeI6" title="better-cli-alerts" /></a>
+<a href="https://www.npmjs.com/package/better-cli-alerts"><img src="https://i.imgur.com/a/uk3MeI6.png" title="better-cli-alerts" /></a>
     </a>
     <br>
 </h4>
