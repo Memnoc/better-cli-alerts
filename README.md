@@ -103,4 +103,8 @@ Default: `''` (Empty string)
 
 <p><a href="https://github.com/catppuccin/palette"><img alt="Chalk library" algn="center" src="https://github.com/chalk/chalk" /></a>&nbsp;<small><strong>Chalk</strong> For providing a zero dependency way to bring colors to the terminal 💜 </small></p>
 
+<p><a href="https://github.com/sindresorhus/log-symbols"><img alt="Log Symbols" algn="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Log Symbols</strong> For providing beautifully simple icons to complement the error messages 💜 </small></p>
+
 <p><a href="https://github.com/catppuccin/palette"><img alt="Catpuccin palette" align="center" src="https://img.shields.io/badge/CATPUCCIN-white.svg?colorB=b7bdf8&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Catpuccin</strong> Simply the best theme palette for anything, and the one we use here 💜 </small></p>
+
+<p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Ahmad Awais</strong> For introducing me to the amazing world of CLI tools written in Node and JavaScript </small></p>

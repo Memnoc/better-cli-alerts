@@ -1,4 +1,4 @@
-import alert from "../src/index";
+import alert from "../src/index.js";
 
 console.clear();
 
