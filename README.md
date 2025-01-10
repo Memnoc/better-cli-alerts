@@ -5,7 +5,10 @@
 [![npm](https://img.shields.io/badge/dt/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
 
 Beautiful, customizable CLI alerts with colors, symbols, and animations powered by Clack.
-✨ Features
+
+![Overview](https://imgur.com/q0XSivS))
+
+## ✨ Features
 
 🎨 Custom colors and symbols
 🌈 Powered by Clack for beautiful UI
