@@ -2,11 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/badge/v/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
-[![npm](https://img.shields.io/badge/dt/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
-
-Beautiful, customizable CLI alerts with colors, symbols, and animations powered by Clack.
-
-![Overview](https://imgur.com/q0XSivS))
+[![custom-cli-alerts](https://i.imgur.com/q0XSivS.png)
 
 ## ✨ Features
 
