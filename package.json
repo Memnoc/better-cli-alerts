@@ -1,10 +1,18 @@
 {
   "name": "better-cli-alerts",
   "version": "2.2.2",
-  "description": "CLI alerts with colors and symbols: success, info, warning, error. Cross platform comaptible: Windows, MacOS,",
+  "description": "CLI alerts with matte colors and symbols: success, info, warning, error. Cross platform comaptible: Windows, MacOS, Lunux",
   "main": "dist/index.js",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "engines": {
+    "node": ">=16"
+  },
   "bin": {
     "better-cli-alerts": "./dist/index.js"
   },
@@ -30,10 +38,11 @@
     "eslint-config-prettier": "^9.0.0",
     "prettier": "3.0.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   },
   "dependencies": {
-    "chalk": "^5.3.0",
+    "@clack/prompts": "^0.9.1",
+    "chalk": "^5.4.1",
     "chalk-animation": "^2.0.3",
     "log-symbols": "^5.1.0"
   },

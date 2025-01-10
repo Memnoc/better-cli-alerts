@@ -1,79 +1,91 @@
-#!/usr/bin/env node
-/**
- * Better CLI Alerts.
- *
- * Cross platform CLI Alerts with colors.
- * Moved to TypeScript since version 2.0.0
- * Works on macOS, Linux, and Windows.
- * Alerts: `yay!`, `FYI`, `careful!`, `oops!`.
- *
- * @author Matteo Stara <https://matechblog.com/>
- */
+import { intro, outro, note, log, spinner } from "@clack/prompts";
+import chalk from "chalk";
+import {
+  AlertOptions,
+  CustomStyle,
+  AlertType,
+  AlertConfig,
+} from "./types/index.js";
+import { defaultSymbols, defaultColors } from "./constants/default.js";
 
-import { colors, symbols, log } from "./constants/index.js";
-import { AlertOptions } from "./types/index.js";
+let config: AlertConfig = {
+  symbols: defaultSymbols,
+  colors: defaultColors,
+  useClack: true,
+};
 
-const alert = (options?: AlertOptions) => {
+export const configure = (newConfig: AlertConfig) => {
+  config = { ...config, ...newConfig };
+};
+
+const alert = async (options?: AlertOptions) => {
   const defaultOptions = {
-    type: "error",
+    type: "error" as AlertType,
     message: "DEFAULT MESSAGE",
     description: "Please define some options",
+    style: {} as CustomStyle,
   };
 
   const opts = { ...defaultOptions, ...options };
-  const { type, message, description } = opts;
-  const printDescription = description
-    ? ` ${description} `
-    : type.toUpperCase();
-  const handleMessage = message ? message : defaultOptions.message;
+  const { type, message, description, style } = opts;
 
-  switch (type) {
-    case `success`:
-      log(
-        `\n${symbols.success} ${colors.green.inverse(
-          `${printDescription}`,
-        )} ${colors.green(handleMessage)}\n`,
-      );
-      break;
-    case `info`:
-      log(
-        `\n${symbols.info} ${colors.blue.inverse(
-          `${printDescription}`,
-        )} ${colors.blue(handleMessage)}\n`,
-      );
-      break;
-    case `warning`:
-      log(
-        `\n${symbols.warning} ${colors.yellow.inverse(
-          `${printDescription}`,
-        )} ${colors.yellow(handleMessage)}\n`,
-      );
-      break;
-    case `error`:
-      log(
-        `\n${symbols.error} ${colors.red.inverse(
-          `${printDescription}`,
-        )} ${colors.red(handleMessage)}\n`,
-      );
-      break;
-    default:
-      log(
-        `\n${symbols.error} ${colors.red.inverse(
-          `${printDescription}`,
-        )} ${colors.red(handleMessage)}\n`,
-      );
-      break;
+  const symbol = style.symbol || config.symbols?.[type] || defaultSymbols[type];
+  const color = style.color || config.colors?.[type] || defaultColors[type];
+
+  const printDescription = description ? description : type.toUpperCase();
+  const handleMessage = message || defaultOptions.message;
+
+  if (config.useClack) {
+    switch (type) {
+      case "success":
+        intro(color(`${symbol} ${printDescription}`));
+        log.success(handleMessage);
+        break;
+      case "info":
+        note(handleMessage, printDescription);
+        break;
+      case "warning":
+      case "error":
+        const spin = spinner();
+        spin.start(printDescription);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        spin.stop(color(`${symbol} ${handleMessage}`));
+        break;
+    }
+    outro("");
+  } else {
+    // Original style output
+    console.log(
+      `\n${symbol} ${color(chalk.inverse(` ${printDescription} `))} ${color(
+        handleMessage,
+      )}\n`,
+    );
   }
 };
 
-export { alert as default };
-
-// NOTE: for debugging purposes
-
 if (import.meta.url === `file://${process.argv[1]}`) {
+  // Custom styling example
+  configure({
+    symbols: {
+      success: "🎉",
+      info: "📝",
+      warning: "⚡",
+      error: "💥",
+    },
+    colors: {
+      success: chalk.hex("#00ff00"),
+      info: chalk.hex("#0099ff"),
+    },
+  });
+
   alert();
   alert({ type: "success", message: "Test success message" });
-  alert({ type: "info", message: "Test info message" });
+  alert({
+    type: "info",
+    message: "Test info message",
+    style: { symbol: "🔍" },
+  });
   alert({ type: "warning", message: "Test warning message" });
   alert({ type: "error", message: "Test error message" });
 }
+export { alert as default };

@@ -1,32 +1,31 @@
-import alert from "../src/index.js";
+import chalk from "chalk";
+import alert, { configure } from "../src/index.js";
 
-console.clear();
+async function runTests() {
+  // Test default alerts
+  alert();
+  alert({ type: "success", message: "Success test" });
+  alert({ type: "info", message: "Info test" });
+  alert({ type: "warning", message: "Warning test" });
+  alert({ type: "error", message: "Error test" });
 
-alert({
-  type: `success`,
-  message: ` All is good! `,
-  description: `YAY :)`,
-});
-alert({
-  type: `info`,
-  message: ` Some useful info `,
-  description: `FYI...`,
-});
-alert({
-  type: `warning`,
-  message: ` Careful! `,
-  description: `CAREFUL :|`,
-});
-alert({
-  type: `error`,
-  message: ` Something is wrong! `,
-  description: `OOPS :(`,
-});
+  // Test custom configuration
+  configure({
+    symbols: {
+      success: "🎉",
+      info: "📢",
+    },
+  });
 
-alert({
-  type: `error`,
-  message: ` Something is wrong! `,
-  description: `YOUR CUSTOM MESSAGE`,
-});
+  // Test styled alerts
+  alert({
+    type: "success",
+    message: "Custom style test",
+    style: {
+      symbol: "⭐",
+      color: chalk.hex("#FF69B4"),
+    },
+  });
+}
 
-alert();
+runTests();
