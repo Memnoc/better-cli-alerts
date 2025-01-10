@@ -1,7 +1,21 @@
 # Custom CLI Alerts ✨
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/badge/v/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
+[![npm](https://img.shields.io/badge/v/custom-cli-alerts)](https://www.npmjs.com/package/custom-cli-alerts)
+
+## 🤔 Why Custom CLI Alerts?
+
+Customization of any kind is great, but customizing CLI UI is just amazing!
+I wanted to have something I could use in my project that is easy, has minimal dependencies and can be personalised with colors and emojis:
+
+- 🎨 **Beautiful Output**: Enhances user experience with visually appealing alerts using Catppuccin's color palette
+- ⚙️ **Customizable**: Change symbols, colors, and styles per alert or globally
+- ✨ **Modern UI**: Powered by Clack for spinners and animations
+- 🛡️ **Type-Safe**: Built with TypeScript for reliable development
+- 🌐 **Cross-Platform**: Works seamlessly on Windows, MacOS, and Linux
+- 🚀 **Zero Configuration**: Works out of the box with sensible defaults
+
+Perfect for CLI tools, dev utilities, and any Node.js application needing that extra touch of polish. 🎉
 
 ## 👀 Visual Examples
 
@@ -132,13 +146,12 @@ Open Pull Request
 [![Clack](https://img.shields.io/badge/Clack-Beautiful%20Prompts-orange)](https://github.com/natemoo-re/clack)
 [![Chalk](https://img.shields.io/badge/Chalk-Terminal%20Styling-green)](https://github.com/chalk/chalk)
 
-- [Catppuccin](https://github.com/catppuccin) for their beautiful color palette
-
 **Special thanks to**:
 
 - [natemoo-re](https://github.com/natemoo-re) for Clack's beautiful prompts
 - [chalk](https://github.com/chalk) team for terminal styling
 - [Ahmad Awais](https://github.com/ahmadawais) for inspiration from better-cli-alerts
+- [Catppuccin](https://github.com/catppuccin) for their beautiful color palette
 - All contributors and the open source community
 
 📝 License
