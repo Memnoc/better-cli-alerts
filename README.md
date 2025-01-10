@@ -55,6 +55,17 @@ color: chalk.hex('#FF69B4')
 [![Clack](https://img.shields.io/badge/Clack-Beautiful%20Prompts-orange)](https://github.com/natemoo-re/clack)
 [![Chalk](https://img.shields.io/badge/Chalk-Terminal%20Styling-green)](https://github.com/chalk/chalk)
 
+## 🎨 Color Palette
+
+Styled with [Catppuccin](https://github.com/catppuccin/catppuccin)'s beautiful palette:
+
+- Success: `#179299` (Teal)
+- Error: `#e64553` (Red)
+- Info: `#7287fd` (Blue)
+- Warning: `#df8e1d` (Yellow)
+
+Special thanks to the [Catppuccin team](https://github.com/catppuccin) for their wonderful color scheme.
+
 ## 🤝 Contributing
 
 Fork the Project
@@ -67,6 +78,8 @@ Open Pull Request
 
 [![Clack](https://img.shields.io/badge/Clack-Beautiful%20Prompts-orange)](https://github.com/natemoo-re/clack)
 [![Chalk](https://img.shields.io/badge/Chalk-Terminal%20Styling-green)](https://github.com/chalk/chalk)
+
+- [Catppuccin](https://github.com/catppuccin) for their beautiful color palette
 
 **Special thanks to**:
 

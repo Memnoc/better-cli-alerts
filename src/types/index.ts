@@ -1,3 +1,4 @@
+import { ChalkInstance } from "chalk";
 export interface DefaultSymbols {
   success: string;
   info: string;
@@ -10,6 +11,13 @@ export type AlertType = "success" | "info" | "warning" | "error";
 export interface CustomStyle {
   symbol?: string;
   color?: (text: string) => string;
+}
+
+export interface ColorPalette {
+  success: ChalkInstance;
+  error: ChalkInstance;
+  info: ChalkInstance;
+  warning: ChalkInstance;
 }
 
 export interface AlertOptions {
