@@ -2,7 +2,61 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/badge/v/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
-[![custom-cli-alerts](https://i.imgur.com/q0XSivS.png)
+
+## 👀 Visual Examples
+
+![custom-cli-alerts](https://i.imgur.com/q0XSivS.png)
+
+### Default Alerts
+
+```typescript
+// Success
+alert({ type: "success", message: "Task completed!" });
+
+// Info with description
+alert({
+  type: "info",
+  message: "New version available",
+  description: "UPDATE",
+});
+
+// Warning with spinner
+alert({
+  type: "warning",
+  message: "Processing...",
+  description: "LOADING",
+});
+
+// Error
+alert({
+  type: "error",
+  message: "Operation failed",
+});
+```
+
+### Custom Styled Alerts
+
+```typescript
+// Custom symbols
+configure({
+  symbols: {
+    success: "🚀",
+    info: "💡",
+    warning: "⚡",
+    error: "💥",
+  },
+});
+
+// Custom colors
+alert({
+  type: "info",
+  message: "Custom style",
+  style: {
+    symbol: "⭐",
+    color: chalk.hex("#FF69B4"),
+  },
+});
+```
 
 ## ✨ Features
 
