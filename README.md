@@ -1,110 +1,80 @@
-Cross platform CLI Alerts with colors with [Catpuccin](https://github.com/catppuccin/palette) colors and custom messages.
-Work on macOS, Linux, and Windows.
+Custom CLI Alerts ✨
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![npm](https://img.shields.io/badge/v/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
+[![npm](https://img.shields.io/badge/dt/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
 
-</h4>
+Beautiful, customizable CLI alerts with colors, symbols, and animations powered by Clack.
+✨ Features
 
-# [better-cli-alerts](https://www.npmjs.com/package/better-cli-alerts)
+🎨 Custom colors and symbols
+🌈 Powered by Clack for beautiful UI
+⚡ Spinners and animations
+🎯 TypeScript support
+🔧 Cross-platform (Windows, MacOS, Linux)
 
-<h4 align="center">
-    <a href="https://github.com/memnoc/better-cli-alerts">
-<a href="https://www.npmjs.com/package/better-cli-alerts"><img src="https://i.imgur.com/xSAwrCC.png" title="better-cli-alerts" /></a>
-    </a>
-    <br>
-</h4>
+## 🚀 Installation
 
-## Install
-
-```sh
-npm install better-cli-alerts
+```bash
+# with Node
+npm install stylish-cli-alerts
+# run without Node
+npx stylish-cli-alerts
 ```
 
-## Usage
+## 🎮 Usage
 
-```js
-const alert = require("better-cli-alerts");
-// or if you use modules
-import alert from "better-cli-alerts";
+```typescript
+typescriptCopyimport alert, { configure } from 'stylish-cli-alerts';
 
-// Success message
-alert({
-  type: `success`,
-  message: ` All is good! `,
-  description: `YAY :)!`,
+// Basic usage
+alert({ type: "success", message: "Task completed!" });
+
+// Custom styling
+configure({
+symbols: {
+success: '🚀',
+info: '💡'
+}
 });
 
-// Info message
+// Per-alert styling
 alert({
-  type: `info`,
-  message: ` Some useful info `,
-  description: `FYI...`,
-});
-
-// Warning message
-alert({
-  type: `warning`,
-  message: ` Careful! `,
-  description: `CAREFUL :/`,
-});
-
-// Error message
-alert({
-  type: `error`,
-  message: ` Something is wrong! `,
-  description: `OOPS! :(`,
-});
-
-// Using custom messages
-alert({
-  type: `error`,
-  message: ` Something is wrong! `,
-  description: `YOUR CUSTOM MESSAGE`,
+type: "info",
+message: "Custom style",
+style: {
+symbol: '⭐',
+color: chalk.hex('#FF69B4')
+}
 });
 ```
 
-# API
+## 🛠️ Tech Stack
 
-### alert(options)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Clack](https://img.shields.io/badge/Clack-Beautiful%20Prompts-orange)](https://github.com/natemoo-re/clack)
+[![Chalk](https://img.shields.io/badge/Chalk-Terminal%20Styling-green)](https://github.com/chalk/chalk)
 
-#### ❯ options
+## 🤝 Contributing
 
-Type: `object`<br>
-Default: `{}`
+Fork the Project
+Create Feature Branch (git checkout -b feature/amazing)
+Commit Changes (git commit -m 'Add feature')
+Push Branch (git push origin feature/amazing)
+Open Pull Request
 
-You can specify the options below.
+## 🙏 Acknowledgments
 
-##### ❯ type
+[![Clack](https://img.shields.io/badge/Clack-Beautiful%20Prompts-orange)](https://github.com/natemoo-re/clack)
+[![Chalk](https://img.shields.io/badge/Chalk-Terminal%20Styling-green)](https://github.com/chalk/chalk)
 
-Type: `string`<br>
-Default: `error`
+**Special thanks to**:
 
-##### ❯ msg
+- [natemoo-re](https://github.com/natemoo-re) for Clack's beautiful prompts
+- [chalk](https://github.com/chalk) team for terminal styling
+- [Ahmad Awais](https://github.com/ahmadawais) for inspiration from better-cli-alerts
+- All contributors and the open source community
 
-Type: `string`<br>
-Default: `You forgot to define all options.` (Error message)
+📝 License
+MIT License - see LICENSE file
 
-##### ❯ description
-
-Type: `string`<br>
-Default: `''` (Empty string)
-
-## License & Conduct
-
-- MIT © [Matteo Stara](https://matechblog.com)
-- [Code of Conduct](code-of-conduct.md)
-
-## Connect
-
-<div align="left">
-    <p><a href="https://github.com/Memnoc"><img alt="GitHub @Memnoc" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=f2d5cf&style=flat&logo=11111b" /></a>&nbsp;<small><strong>(follow)</strong> Follow me on Github</small></p>
-</div>
-<br>
-
-## Credits
-
-<p><a href="https://github.com/catppuccin/palette"><img alt="Chalk library" algn="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Chalk</strong> For providing a zero dependency way to bring colors to the terminal ◓  </small></p>
-
-<p><a href="https://github.com/sindresorhus/log-symbols"><img alt="Log Symbols" algn="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Log Symbols</strong> For providing beautifully simple icons to complement the error messages 🔣</small></p>
-
-<p><a href="https://github.com/catppuccin/palette"><img alt="Catpuccin palette" align="center" src="https://img.shields.io/badge/CATPUCCIN-white.svg?colorB=b7bdf8&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Catpuccin</strong> Simply the best theme palette for anything, and the one we use here 🐈</small></p>
-
-<p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-black.svg?colorB=8aadf4&style=flat&logo=11111b" /></a>&nbsp;<small><strong>Ahmad Awais</strong> For introducing me to the amazing world of CLI tools written in Node and JavaScript 🚀 </small></p>
+<p align="center">Made with ❤️ by Memnoc</p>

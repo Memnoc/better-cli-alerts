@@ -1,5 +1,5 @@
 {
-  "name": "better-cli-alerts",
+  "name": "custom-cli-alerts",
   "version": "2.2.2",
   "description": "CLI alerts with matte colors and symbols: success, info, warning, error. Cross platform comaptible: Windows, MacOS, Lunux",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
     "node": ">=16"
   },
   "bin": {
-    "better-cli-alerts": "./dist/index.js"
+    "custom-cli-alerts": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
   "files": [
