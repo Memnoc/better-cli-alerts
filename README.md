@@ -1,4 +1,5 @@
-Custom CLI Alerts ✨
+# Custom CLI Alerts ✨
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/badge/v/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
 [![npm](https://img.shields.io/badge/dt/stylish-cli-alerts)](https://www.npmjs.com/package/stylish-cli-alerts)
